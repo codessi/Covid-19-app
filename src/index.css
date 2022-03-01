@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+
+:root{
+ --gray: hsl(219,18%,31%);
+ --turco: hsl(162,63%,58%);
+ --dark: hsl(219,49%,12%);
+
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  background-color: var(--dark);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+
+main {
+  margin: 3rem 0;
+  text-align: center;
+}
+main h1{
+  font-size: 3rem;
+}
+
+.card{
+background-color: var(--gray);
+padding: 1.9rem;
+/* padding-top: 1rem; */
+border-radius: .4rem;
+margin: 1rem;
+width: 21rem;
+}
+
+.card h1{
+  color: var(--turco);
+  font-weight: 700;
+  font-size: 2rem;
+  
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
 }
